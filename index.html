@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Zabota 2.0</title>
 </head>
@@ -18,16 +19,16 @@
                     <img src="img/Logo.png" alt="Логотип">
                 </div>
                 <div class="nav__panel">
-                    <ul class="nav__items">
-                        <li class="nav__item"><a href="#">Возможности</a></li>
-                        <li class="nav__item"><a href="#">О компании</a></li>
-                        <li class="nav__item"><a href="#">Отзывы</a></li>
+                    <ul class="nav__items" id="menu">
+                        <li class="nav__item"><a href="#opportunities">Возможности</a></li>
+                        <li class="nav__item"><a href="#about">О компании</a></li>
+                        <li class="nav__item"><a href="#feedback">Отзывы</a></li>
                     </ul>
                 </div>
                 <div class="nav__phone">
                     <a class="phone-link" href="#">8 (800) 555-38-62</a>
                 </div>
-                <a href="#" class="nav__btn">Начать сейчас</a>
+                <a href="javascript:PopUpShow()" class="nav__btn modal-btn ">Начать сейчас</a>
             </nav>
             <div class="header__content">
                 <div class="header__info">
@@ -49,7 +50,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="header__btn">Установить за 1₽</a>
+                    <a href="javascript:PopUpShow()" class="header__btn modal-btn">Установить за 1₽</a>
                     <span>Интегрируется с вашей медицинской информационной системой</span>
                 </div>
                 <div class="header__img">
@@ -59,12 +60,12 @@
         </div>
     </header>
     <section class="section section__blue">
-        <div class="title__about">
+        <div class="title__about" id="opportunities">
             <h3>Что вы получаете за 1 рубль?</h3>
             <span>мы предлагаем широкий комплекс услуг для вашей клиники</span>
         </div>
-        <div class="about__container">
-            <div class="about__card">
+        <div class="advantage__container">
+            <div class="about__card wow slideInLeft">
                 <div class="about__card-number">
                     01
                 </div>
@@ -81,7 +82,7 @@
                     <img src="img/mobile-1.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInRight">
                 <div class="about__card-number">
                     02
                 </div>
@@ -98,7 +99,7 @@
                     <img src="img/mobile-2.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInLeft">
                 <div class="about__card-number">
                     03
                 </div>
@@ -114,7 +115,7 @@
                     <img src="img/mobile-3.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInRight">
                 <div class="about__card-number">
                     04
                 </div>
@@ -131,7 +132,7 @@
                     <img src="img/mobile-4.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInLeft">
                 <div class="about__card-number">
                     05
                 </div>
@@ -148,7 +149,7 @@
                     <img src="img/mobile-5.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInRight">
                 <div class="about__card-number">
                     06
                 </div>
@@ -165,7 +166,7 @@
                     <img src="img/mobile-6.png" alt="Телефон">
                 </div>
             </div>
-            <div class="about__card">
+            <div class="about__card wow slideInLeft">
                 <div class="about__card-number">
                     07
                 </div>
@@ -184,7 +185,7 @@
         </div>
     </section>
     <section class="section section__review">
-        <div class="title__review">
+        <div class="title__review" id="feedback">
             <h3>Отзывы клиентов</h3>
             <span>которые установили ZABOTA 2.0 </span>
         </div>
@@ -325,10 +326,176 @@
             </div>
         </div>
     </section>
+    <section class="section about">
+        <div class="about__container" id="about">
+            <h3>О компании</h3>
+            <span>ZABOTA 2.0 </span>
+            <p class="about__text">
+                Zabota 2.0 — ведущая система для автоматизации медицинского маркетинга,
+                 увеличения потока пациентов и их лояльности.
+            </p>
+            <ul class="about__list">
+                <li class="about__list-item">
+                    <div class="list-img">
+                        <img src="img/house.svg" alt="">                        
+                    </div>
+                    <div class="list-title">
+                        2014 год <br>
+                        <span>основание компании</span>
+                    </div> 
+                </li>
+                <li class="about__list-item">
+                    <div class="list-img">
+                        <img src="img/placeholder.svg" alt="">
+                    </div>
+                    <div class="list-title">
+                        523 клиники <br>
+                        <span>на територии всей России</span>
+                    </div>
+                </li>
+                <li class="about__list-item">
+                    <div class="list-img">
+                        <img src="img/chat.svg" alt="">
+                    </div>
+                    <div class="list-title">
+                        7 200 000 <br>
+                        <span>счастливых пациентов</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section partners">
+        <div class="partners__container">
+            <div class="map__block">
+                <div class="map__info">
+                    <div class="map__title title">
+                        <h3>Сейчас нашими услугами пользуются более 500 клиник! </h3>
+                    </div>
+                    <a href="javascript:PopUpShow()">Присоединиться за 1₽</a>
+                </div>
+                <div class="map__picture">
+                    <img src="img/image2.jpg" alt="">
+                    <div class="map__picture-text">
+                        500+ <br>
+                        <span>клиник по всей России</span>
+                    </div>
+                    <div class="doctor-img">
+                        <img src="img/doctor.svg" alt=""> <br>
+                        <span>cистема создана <br>
+                            при поддержке <br> врачей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners__slider">
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/1.png" alt="">
+                </div>
+            </div>
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/2.png" alt="">
+                </div>
+            </div>
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/3.png" alt="">
+                </div>
+            </div>
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/4.png" alt="">
+                </div>
+            </div>
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/5.png" alt="">
+                </div>
+            </div>
+            <div class="partners__slider-item">
+                <div class="slider-img">
+                    <img src="img/6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section addres">
+        <div class="addres__container">
+            <div class="addres__title">
+                <h3>Как нас найти?</h3>
+            </div>
+            <ul class="addres__list">
+                <li class="addres__list-item">
+                    <img src="img/placeholder_m.svg" alt="">
+                    <span>г. Москва, Пресненская наб., 12
+                        (Москва-Сити, Башня Федерация)</span>
+                </li>
+                <li class="addres__list-item">
+                    <img src="img/phone.svg" alt="">
+                    <span><a href="tel:+74993222185">+7 (499) 322-21-85</a></span>
+                </li>
+                <li class="addres__list-item">
+                    <img src="img/mail.svg" alt="">
+                    <span>info@zabota.tech</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer-text">
+                <p>Политика конфиденциальности
+                    © ООО «Медицина» ИНН: 7721479230 <br>
+                    Является оператором персональных данных под регистрационным номером: 77-17-005444</p>
+            </div>
+            <ul class="footer-social">
+                <li class="footer-social-item">
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#"><img src="img/insta.svg" alt=""></a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#"><img src="img/telegram.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="modal__overlay" id="modal">
+        <div class="modal__popup">
+            <div>
+                <a href="javascript:PopUpHide()" class="close">
+                    <span></span>
+                </a>
+            </div>
+            <div class="modal__title">
+                <h3>Получить консультацию</h3>
+                <span>Свяжемся с вами в течение 20 минут,
+                    расскажем о продуктах, ценах и этапах работы
+                </span>
+            </div>
+            <form action="#" class="modal__form">
+                <input type="text" class="modal__input" placeholder="Ваше имя">
+                <input type="text" class="modal__input" placeholder="Телефон">
+                <input type="text" class="modal__input" placeholder="Город">
+                <p>
+                    <input type="checkbox" checked class="checkbox">
+                        Я согласен с «политикой обработки персональных
+                        данных» компании
+                    </p>
+                <button class="modal__btn" >Свяжитесь со мной</button>
+            </form>
+        </div>
+    </div>
     
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
